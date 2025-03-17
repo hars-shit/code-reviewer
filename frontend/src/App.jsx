@@ -20,7 +20,7 @@ const App = () => {
   async function reviewCode() {
     try {
       setLoading(true)
-      let response = await axios.post('http://localhost:3000/ai/get-review', { code })
+      let response = await axios.post('https://backend-steel-one-77.vercel.app/ai/get-review', { code })
       setReview(response?.data)
       setLoading(false)
     }
